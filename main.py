@@ -1,0 +1,11 @@
+mytuple=(2,3,4,5,6,7,8)
+print(mytuple)
+mytuple1=(3,"sukhit",True,1.12)
+print(mytuple1)
+mytuple2=((2,4,"sukhit"))
+print(mytuple2)
+print(mytuple[2:5])
+tuple3=("a","c","y","j")
+print(tuple3)
+for i in tuple3:
+    print(f"hello {i}")
