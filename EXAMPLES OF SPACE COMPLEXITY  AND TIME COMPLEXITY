@@ -1,0 +1,11 @@
+arr = [10, 20, 30, 40, 50]
+print(arr[2])
+
+arr = [10, 20, 30, 40, 50]
+for num in arr:
+    print(num)
+    
+arr = [1, 2, 3]
+for i in arr:
+    for j in arr:
+        print(i, j)
