@@ -1,0 +1,27 @@
+quiz_scores = [85, 92, 78, 96, 88, 73, 91, 84]
+print("=== Direct Access ===")
+index = 3
+print(f"Score at index {index}: {quiz_scores[index]}")
+print("\n=== Linear Search ===")
+target_score = int(input("Enter a score to search for: "))
+found = False
+for i in range(len(quiz_scores)):
+    if quiz_scores[i] == target_score:
+        print(f"Score {target_score} found at index {i}")
+        found = True
+        break
+if not found:
+    print(f"Score {target_score} not found.")
+print("\n=== Pair Comparison ===")
+duplicates_found = False
+for i in range(len(quiz_scores)):
+    for j in range(i + 1, len(quiz_scores)):
+        if quiz_scores[i] == quiz_scores[j]:
+            print(f"Duplicate score found: {quiz_scores[i]}")
+            duplicates_found = True
+if not duplicates_found:
+    print("No duplicate scores found.")
+print("\n=== Time Complexity Summary ===")
+print("Direct Access: O(1)")
+print("Linear Search: O(n)")
+print("Pair Comparison: O(n²)")
